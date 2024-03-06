@@ -1,7 +1,7 @@
 # Insurance-data-analysis-using-SQL
 
 Objective:
-The objective of this SQL project is to analyze a dataset containing insurance-related information, focusing on various aspects such as claimed amounts, patient demographics, and behaviors. The dataset provides a comprehensive overview of insurance claims made by patients, including details like patient ID, age, gender, region, BMI (Body Mass Index), smoking status, number of children, and the claimed insurance amount.
+The objective of this SQL project is to analyze a dataset containing insurance-related information, focusing on various aspects such as claimed amounts, patient demographics, and behaviors. The dataset provides a comprehensive overview of insurance claims made by patients, including details like patient ID, age, gender, region, BMI (Body Mass Index), smoking status, number of children, and the claimed insurance amount. Here is the link to dataset https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health.
 
 Key Queries and Analysis:
 

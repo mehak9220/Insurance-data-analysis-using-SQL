@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Insurance Claim Analysis: Demographic and Health | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Impact on Risk and Severity of Insurance Claim" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="health,insurance,public health,healthcare" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="67fRqb4uR4rtoRGQyK6knQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1709709029732;
+    window["pageRequestEndTime"] = 1709709029863;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-3" />
+  <script nonce="67fRqb4uR4rtoRGQyK6knQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2", "async-google-font-3"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+  <script nonce="67fRqb4uR4rtoRGQyK6knQ==" src="https://www.google.com/recaptcha/enterprise.js?render=6LcW02cpAAAAAJlaJemsQQEwAiTEYB4aR6FYE_rD&waf=session" async defer></script>
+   <style>.grecaptcha-badge { visibility: hidden; }</style>
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=eea5e317692543d9a362" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=67597c5878526280c088" />
+  
+    
+ 
+      <script nonce="67fRqb4uR4rtoRGQyK6knQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="67fRqb4uR4rtoRGQyK6knQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="67fRqb4uR4rtoRGQyK6knQ==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health" />
+    <meta property="og:title" content="Insurance Claim Analysis: Demographic and Health" />
+    <meta property="og:description" content="Impact on Risk and Severity of Insurance Claim" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/2792786/4821204/8ed215a78162b92cf14cf828b0dc6a57/dataset-card.png?t=2023-01-08-14-16-40" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="67fRqb4uR4rtoRGQyK6knQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Insurance Claim Analysis: Demographic and Health","description":"_____\n# Insurance Claim Analysis: Demographic and Health Factors\n### Impact on Risk and Severity of Insurance Claim\nBy Sumit Kumar Shukla [[source]](https://data.world/sumitrock)\n_____\n\n### About this dataset\n&gt; This dataset contains insightful information related to insurance claims, giving us an in-depth look into the demographic patterns of those receiving them. The dataset contains information on patient age, gender, BMI (Body Mass Index), blood pressure levels, diabetic status, number of children, smoking status and region. By analyzing these key factors across geographical areas and across different demographics such as age or gender we can gain a greater understanding of who is most likely to receive an insurance claim. This understanding gives us valuable insight that can be used to inform our decision making when considering potential customers for our services. On a broader scale it can inform public policy by allowing for more targeted support for those who are most in need and vulnerable. These kinds of insights are extremely valuable and this dataset provides us with the tools we need to uncover them!\n\n### More Datasets\n&gt; For more datasets, click [here](https://www.kaggle.com/thedevastator/datasets).\n\n### Featured Notebooks\n&gt; - 🚨 **Your notebook can be here!** 🚨! \n\n### How to use the dataset\n&gt; This dataset provides a comprehensive examination of demographic and health data from insurance claims, which can be used to make predictions about a wide variety of health-related outcomes. It is designed to give users powerful insights into the relationship between different demographic factors such as age, gender, BMI, blood pressure etc., the presence of chronic diseases like diabetes, smoking status and region with insurance claim amounts. \n&gt; \n&gt; In order to make use of this dataset for research purposes or machine learning applications like predictive analytics, it is important to take various factors into consideration while using it. The following are some tips on how to use this dataset: \n&gt; - Make sure that you analyze all variables in relation with one another instead of treating them separately; this will help you understand how they interact and affect one another before creating models or drawing conclusions from the data. \n&gt; - Observe any relationships among three or more variables together - e.g., what’s the correlation between age &amp; gender vs claim amount? This can be done using multidimensional analysis methods like factor analysis (FA) or cluster analysis (CA).  \n&gt; - Take into account hidden patterns in your dataset by looking for outliers or exceptions that might not otherwise be visible/apparent at first glance - these could signal unexpected influences on your variables when modeling/predicting results!  \n&gt; - When applying regression models on this dataset keep in mind that its properties may change over time due to external conditions such as policy changes by insurers or general trends in claims; retrain your models periodically if necessary accordingly!  \n&gt; 5 Finally when interpreting results obtained from analyzingthis datasets focus not only on numeric values but also try capturing qualitative characteristics so that you can get a deeper understanding about each variable influencing your prediction results!\n\n### Research Ideas\n&gt; - Identifying trends in insurance claims based on age, gender, BMI, and blood pressure. \n&gt; - Developing targeted marketing campaigns for customers at high risk of making an insurance claim. \n&gt; - Investigating correlations between health traits (such as BMI and blood pressure) with the likelihood of making a claim\n\n### Acknowledgements\n&gt; If you use this dataset in your research, please credit the original authors.\n&gt; [Data Source](https://data.world/sumitrock)\n&gt; \n&gt;\n\n\n### License\n&gt; \n&gt; \n&gt; See the dataset description for more information.\n\n### Columns\n\n**File: insurance_data.csv**\n| Column name   | Description                                              |\n|:--------------|:---------------------------------------------------------|\n| **Diabetic**  | Whether the insured person is diabetic or not. (Boolean) |\n| **Children**  | Number of children of the insured person. (Integer)      |\n| **Smoker**    | Whether the insured person is a smoker or not. (Boolean) |\n| **Claim**     | Amount of the insurance claim. (Float)                   |\n\n### Acknowledgements\n&gt; If you use this dataset in your research, please credit the original authors.\n&gt; If you use this dataset in your research, please credit [Sumit Kumar Shukla](https://data.world/sumitrock).\n\n","url":"https://www.kaggle.com/thedevastator/insurance-claim-analysis-demographic-and-health","version":2,"keywords":["subject, health and fitness, health","subject, people and society, business, finance, insurance","subject, health and fitness, health, public health","subject, health and fitness, health, healthcare"],"license":{"@type":"CreativeWork","name":"Other (specified in description)","url":""},"identifier":["2792786"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"The Devastator","url":"https://www.kaggle.com/thedevastator","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/10654180-kg.png"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health/download?datasetVersionNumber=2","contentSize":"20945 bytes"}],"commentCount":3,"dateModified":"2023-01-07T11:28:59.047Z","discussionUrl":"https://www.kaggle.com/thedevastator/insurance-claim-analysis-demographic-and-health/discussion","alternateName":"Impact on Risk and Severity of Insurance Claim","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/2792786/4821204/8ed215a78162b92cf14cf828b0dc6a57/dataset-card.png?t=2023-01-08-14-16-40","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":3},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":5523},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":33888},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":80}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="67fRqb4uR4rtoRGQyK6knQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="67fRqb4uR4rtoRGQyK6knQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="67fRqb4uR4rtoRGQyK6knQ==" src="/static/assets/runtime.js?v=15bb1ab8a31c1fce9d4f" data-turbolinks-track="reload"></script>
+  <script nonce="67fRqb4uR4rtoRGQyK6knQ==" src="/static/assets/vendor.js?v=69c95612334f7e211543" data-turbolinks-track="reload"></script>
+  <script nonce="67fRqb4uR4rtoRGQyK6knQ==" src="/static/assets/app.js?v=ed007f216b20eced997a" data-turbolinks-track="reload"></script>
+    <script nonce="67fRqb4uR4rtoRGQyK6knQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+<script nonce="67fRqb4uR4rtoRGQyK6knQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="67fRqb4uR4rtoRGQyK6knQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
